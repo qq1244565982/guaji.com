@@ -1,13 +1,39 @@
 <!DOCTYPE html>  
-<html lang="zh">  
+<html lang="en">  
 <head>  
     <meta charset="UTF-8">  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Particle Idle Game</title>  
     <link rel="stylesheet" href="styles.css">  
-    <title>我的项目</title>  
 </head>  
 <body>  
-    <h1>欢迎来到我的项目</h1>  
+    <div id="game">  
+        <h1>Particle Idle Game</h1>  
+        <div class="particle-info">  
+            <p>夸克: <span id="quarkCount">0</span></p>  
+            <p>电子: <span id="electronCount">0</span> (等级: <span id="electronLevel">1</span>)</p>  
+            <p>尘埃: <span id="dustCount">1</span> (等级: <span id="dustLevel">1</span>)</p>  
+            <p>轻子: <span id="leptonCount">0</span></p>  
+            <p>玻色子: <span id="bosonCount">0</span></p>  
+            <p>重子: <span id="baryonCount">0</span></p>  
+            <p>超重子: <span id="hyperonCount">0</span></p>  
+        </div>  
+        <div class="buttons">  
+            <button id="collectButton">收集粒子</button>  
+            <button id="synthesizeLeptonButton">合成轻子</button>  
+            <button id="oneClickSynthesizeLeptonButton">一键合成轻子</button>  
+            <button id="upgradeElectronButton">升级电子</button>  
+            <button id="upgradeDustButton">升级尘埃</button>  
+            <button id="synthesizeBosonButton">合成玻色子</button>  
+            <button id="oneClickSynthesizeBosonButton">一键合成玻色子</button>  
+            <button id="synthesizeBaryonButton">合成重子</button>  
+            <button id="oneClickSynthesizeBaryonButton">一键合成重子</button>  
+            <button id="synthesizeHyperonButton">合成超重子</button>  
+            <button id="oneClickSynthesizeHyperonButton">一键合成超重子</button>  
+            <button id="saveButton">保存游戏</button>  
+            <button id="resetButton">重置游戏</button>  
+        </div>  
+    </div>  
     <script src="script.js"></script>  
 </body>  
-</html>
+</html>  
